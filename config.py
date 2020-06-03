@@ -1,6 +1,6 @@
 # General
 name = "COVIDNext50_NewData"
-gpu = True
+gpu = False
 batch_size = 64
 n_threads = 20
 random_seed = 1337
