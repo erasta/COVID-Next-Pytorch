@@ -9,7 +9,7 @@ class COVIDNext50(nn.Module):
     def __init__(self, n_classes):
         super(COVIDNext50, self).__init__()
         self.n_classes = n_classes
-        trainable = True
+        trainable = False
 
         # Layers
         backbone = models.resnext50_32x4d(pretrained=True)

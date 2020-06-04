@@ -7,7 +7,9 @@ random_seed = 1337
 
 # Model
 # Model weights path
-weights = "./experiments/ckpts/<model.pth>"
+# weights = "./experiments/ckpts/<model.pth>"
+weights = './experiments/COVIDNext50_NewData_F1_92.98_step_10800.pth'
+
 
 # Optimizer
 lr = 1e-4
@@ -16,11 +18,17 @@ lr_reduce_factor = 0.7
 lr_reduce_patience = 5
 
 # Data
-train_imgs = "/data/ssd/datasets/covid/COVIDxV2/data/train"
-train_labels = "/data/ssd/datasets/covid/COVIDxV2/data/train_COVIDx.txt"
+# train_imgs = "/data/ssd/datasets/covid/COVIDxV2/data/train"
+# train_labels = "/data/ssd/datasets/covid/COVIDxV2/data/train_COVIDx.txt"
 
-val_imgs = "/data/ssd/datasets/covid/COVIDxV2/data/test"
-val_labels = "/data/ssd/datasets/covid/COVIDxV2/data/test_COVIDx.txt"
+# val_imgs = "/data/ssd/datasets/covid/COVIDxV2/data/test"
+# val_labels = "/data/ssd/datasets/covid/COVIDxV2/data/test_COVIDx.txt"
+
+train_imgs = "assets/covid19newdata/train"
+train_labels = "assets/covid19newdata/train_COVIDx.txt"
+
+val_imgs = "assets/covid19newdata/train"
+val_labels = "assets/covid19newdata/test_COVIDx.txt"
 
 # Categories mapping
 mapping = {
