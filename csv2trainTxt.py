@@ -34,10 +34,13 @@ with open('assets/covid19newdata/train_COVIDx.txt', 'w') as f:
         type = random.randint(0, 2)
         if type == 0 and len(normal) > 0:
             row = normal.pop()
+            mapping = 'normal'
         elif type == 1 and len(pnemonia) > 0:
             row = pnemonia.pop()
+            mapping = 'pneumonia'
         elif type == 2 and len(covid) > 0:
             row = covid.pop()
+            mapping = 'COVID-19'
         else:
             continue
-        f.write(str(i) + " " + row["X_ray_image_name"] + " " + str(type) + "\n")
+        f.write(str(i) + " " + row["X_ray_image_name"] + " " + mapping + "\n")
