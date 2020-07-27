@@ -114,7 +114,7 @@ def main():
     log.info("Number of validation examples {}".format(len(val_dataset)))
 
     if config.weights:
-        state = torch.load(config.weights)
+        state = torch.load(config.weights, map_location=torch.device('cpu'))
         log.info("Loaded model weights from: {}".format(config.weights))
     else:
         state = None

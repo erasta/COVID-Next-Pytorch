@@ -45,6 +45,6 @@ n_classes = len(mapping)
 
 # Training
 epochs = 300
-log_steps = 200
-eval_steps = 400
+log_steps = 1
+eval_steps = 1
 ckpts_dir = "./experiments/ckpts"
